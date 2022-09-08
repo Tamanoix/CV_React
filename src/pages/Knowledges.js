@@ -1,11 +1,21 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
+import Languages from '../components/knowledges/Languages';
+import Experience from '../components/knowledges/Experience';
+import Hobbies from '../components/knowledges/Hobbies';
+import OtherSkills from '../components/knowledges/OtherSkills';
+
 
 const Knowledges = () => {
     return (
-        <div>
+        <div className='knowledges'>
             <Navigation />
-            Mes savoirs/compétences
+            <div className="knowledgesContent">
+                <Languages />
+                <Experience />
+                <OtherSkills />
+                <Hobbies />
+            </div>
         </div>
     );
 };

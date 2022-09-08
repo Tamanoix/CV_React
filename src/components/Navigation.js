@@ -4,38 +4,41 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
 
+    const classNameFunc = ({ isActive }) => (isActive ? "navActive" : "");
+
     return (
         <div className='sidebar'>
 
             <div className="id">
                 <div className="idContent">
-                    <img src={PhotoCV} alt="Photo CV" width={300} />
-                    <h3>Benoit Krzesinski - Tamanoix</h3>
+                    <img src={PhotoCV} alt="Photo CV" />
+                    <h3>Benoit Krzesinski</h3>
+                    <h3>Tamanoix</h3>
                 </div>
             </div>
 
             <div className="navigation">
                 <ul>
                     <li>
-                        <NavLink exact to="/" activeClassName="navActive">
+                        <NavLink to="/" end className={classNameFunc}>
                             <i className='fas fa-home'></i>
                             <span>Accueil</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/competences" activeClassName="navActive">
+                        <NavLink to="/competences" end className={classNameFunc}>
                             <i className='fas fa-mountain'></i>
                             <span>Compétences</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/portfolio" activeClassName="navActive">
+                        <NavLink to="/portfolio" end className={classNameFunc}>
                             <i className='fas fa-images'></i>
                             <span>Portfolio</span>
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink exact to="/contact" activeClassName="navActive">
+                        <NavLink to="/contact" end className={classNameFunc}>
                             <i className='fas fa-address-book'></i>
                             <span>Contact</span>
                         </NavLink>
@@ -66,11 +69,11 @@ const Navigation = () => {
                         </a>
                     </li>
                 </ul>
-            </div>
-
-            <div className='signature'>
-                <a href="#">Tamanoix - 2022</a>
-            </div>
+                
+                <div className='signature'>
+                    <a href="#">Tamanoix - 2022</a>
+                </div>
+            </div> 
 
         </div>
     );
