@@ -13,7 +13,6 @@ const Navigation = () => {
                 <div className="idContent">
                     <img src={PhotoCV} alt="Photo CV" />
                     <h3>Benoit Krzesinski</h3>
-                    <h3>Tamanoix</h3>
                 </div>
             </div>
 
@@ -58,7 +57,7 @@ const Navigation = () => {
                             <i className='fab fa-github'></i>
                         </a>
                     </li>
-                    <li>
+                    {/* <li>
                         <a href="#" target="_blank" rel="noopener noreferrer">
                             <i className='fab fa-twitter'></i>
                         </a>
@@ -67,7 +66,7 @@ const Navigation = () => {
                         <a href="#" target="_blank" rel="noopener noreferrer">
                             <i className='fab fa-codepen'></i>
                         </a>
-                    </li>
+                    </li> */}
                 </ul>
                 
                 <div className='signature'>
