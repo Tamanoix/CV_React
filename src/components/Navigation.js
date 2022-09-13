@@ -12,7 +12,7 @@ const Navigation = () => {
             <div className="id">
                 <div className="idContent">
                     <img src={PhotoCV} alt="Photo CV" />
-                    <h3>Benoit Krzesinski</h3>
+                    <h3>Benoit <br /> Krzesinski</h3>
                 </div>
             </div>
 

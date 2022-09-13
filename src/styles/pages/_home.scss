@@ -1,7 +1,7 @@
 .home {
 
   .homeContent {
-    background: linear-gradient(115deg, $color-1 50%, transparent 100%);
+    // background: linear-gradient(115deg, $color-1 20%, transparent 50%, transparent 100%);
     min-height: $minHeight;
     width: 100%;
     min-height: 500px;
@@ -14,12 +14,10 @@
       position: absolute;
       height: 100%;
       width: inherit;
-      background: url('../../media/tamanoix_web.jpg') no-repeat center/cover;
+      background: url('../../media/CV_Plan_1.jpg') no-repeat center/cover;
       z-index: -1;
-      /* filter: brightness(30%); */
-      background-size: 80%;
-      background-position-x: 150%;
-      background-position-y: 100%;
+      // filter: brightness(30%); */ 
+      background-position-x: 100%;
     }
 
     .content {
@@ -30,8 +28,8 @@
 
       h1 {
         font-size: 5rem;
-        font-family: $font-3;
-        color: $color-3;
+        font-family: $font-4;
+        color: $color-1;
         text-transform: uppercase;
         text-shadow: 3px 6px 2px $black;
       }
@@ -39,7 +37,7 @@
       h2 {
         font-size: 2.5rem;
         padding: 1.5rem 0 7rem;
-        color: $color-3;
+        color: $color-1;
         text-shadow: 1px 4px 1px $black;
       }
 
@@ -71,9 +69,8 @@
 
 @media screen and (max-width:580px){
   .homeContent {
-    &:after {
-    background: url('../../media/tamanoix_web.jpg') no-repeat 60% 50%/cover !important;
-    }
+      height: 90vh !important;
+
     h1 {
       font-size: 3rem !important;
     }
