@@ -62,11 +62,12 @@ a:visited {
     }
 }
 
-.homeContent , .knowledgesContent , .portfolioContent , .contactContent {
+#root .homeContent , .knowledgesContent , .portfolioContent , .contactContent {
     margin-left: 0.4rem ;
 
     @media screen and (max-width: 850px) {
-        margin-left: 0 !important;        
+        width: 95% !important;
+        margin: auto !important; 
     }
 }
 

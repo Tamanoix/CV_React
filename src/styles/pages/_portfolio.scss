@@ -251,13 +251,21 @@
 
     .portfolioContent {
         grid-template-rows: 1fr !important;
-  
-        .project {
-            grid-template-rows: 30px 40px 80px 40px !important;
-            width: 98% !important;
-  
-            img {
-                height: 100% !important;
+
+        .projects {
+            grid-area: unset;
+            justify-content: flex-start;
+            
+            .project {
+                grid-template-rows: unset !important;
+                width: 100% !important;
+    
+                img {
+                    height: 100% !important;
+                }
+            }
+            .infosContent {
+                width: 95vw !important;
             }
         }
     }

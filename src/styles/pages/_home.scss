@@ -69,13 +69,25 @@
 
 @media screen and (max-width:580px){
   .homeContent {
-      height: 90vh !important;
+    height: 85vh !important;
+
+    &:after {
+      width: 100% !important;
+    }
+    .content {
+      top: 10% !important;
+      left: 5% !important;
+
+      h2 {
+        padding: 1.5rem 0 5rem !important;
+      }
+    }
 
     h1 {
       font-size: 3rem !important;
     }
     h2 {
-      font-size: 1.8rem !important;
+      font-size: 1.5rem !important;
     }
   }
 }

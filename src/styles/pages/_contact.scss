@@ -177,6 +177,8 @@
 @media screen and (max-width: 500px){
 
     .contactContent {
+        height: 95vh !important;
+
         .contactBox {
             min-width: 100% !important;
         }
@@ -187,6 +189,11 @@
 
         h4 {
             font-size: .9rem;
+        }
+
+        .socialNetwork ul a {
+            width: 25%;
+            padding: 1rem 0;
         }
     }
 }
