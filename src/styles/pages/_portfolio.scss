@@ -257,15 +257,21 @@
             justify-content: flex-start;
             
             .project {
-                grid-template-rows: unset !important;
+                grid-template-rows: 15% 15% 55% 15% !important;
                 width: 100% !important;
     
                 img {
-                    height: 100% !important;
+                    height: 95% !important;
                 }
             }
             .infosContent {
                 width: 95vw !important;
+                padding: 1rem !important;
+
+                .sourceCode .button {
+                    padding: 0.5rem;
+                    font-size: 12px;
+                }
             }
         }
     }
