@@ -9,14 +9,14 @@ const ProjectList = () => {
     const state = {
         projects: portfolioData,
         radios: [
-            {id: 1, value: "javascript"},
-            {id: 2, value: "css"},
-            {id: 3, value: "react"},
-            {id: 4, value: "php"},
+            {id: 1, value: "react"},
+            {id: 2, value: "javascript"},
+            {id: 3, value: "php"},
+            {id: 4, value: "css"},
         ]
     }
 
-    const [selectedRadio, setSelectedRadio] = useState('javascript');
+    const [selectedRadio, setSelectedRadio] = useState('react');
     const projects = state.projects;
     const radios = state.radios;
 

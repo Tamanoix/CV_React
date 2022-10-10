@@ -29,6 +29,10 @@ $minHeight : 95vh;
     padding: 0;
 }
 
+html {
+    position: relative;
+}
+
 body {
     margin: 1rem auto;
     max-width: 1200px;
